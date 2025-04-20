@@ -1,0 +1,128 @@
+.notable-experience-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #5b8fb9, #301e67);
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.experience-wrapper {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.experience-card:hover {
+  transform: translateX(5px);
+  border-left: 4px solid #5b8fb9;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.experience-icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #5b8fb9, #301e67);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  box-shadow: 0 4px 8px rgba(48, 30, 103, 0.2);
+}
+
+.experience-title {
+  flex: 1;
+}
+
+.experience-title h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+  margin-bottom: 0.2rem;
+}
+
+.experience-subtitle {
+  color: #5b8fb9;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.experience-details p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .notable-experience-section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .experience-card {
+    padding: 1.2rem;
+  }
+}

@@ -1,0 +1,110 @@
+.role-communication-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #5b8fb9, #301e67);
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.role-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  flex: 1;
+}
+
+.role-card {
+  background: linear-gradient(145deg, #f8f9fa, #ffffff);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(230, 230, 230, 0.5);
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.role-icon {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #5b8fb9, #301e67);
+  color: white;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.role-card h4 {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.role-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .role-communication-section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .role-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
