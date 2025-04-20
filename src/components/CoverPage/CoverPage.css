@@ -1,0 +1,274 @@
+.cover-page {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: url('../../assets/images/CAS02572-Enhanced-NR-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 8%;
+  position: relative;
+}
+
+.cover-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+  z-index: 1;
+}
+
+
+
+
+
+.content {
+  max-width: 700px;
+  color: #fff;
+  padding: 3rem;
+  z-index: 10;
+  position: relative;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.1;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  position: relative;
+  display: inline-block;
+  transform: translateZ(0);
+  overflow: hidden;
+  padding-bottom: 0.5rem;
+}
+
+.subtitle::after {
+  content: '';
+  position: absolute;
+  bottom: -0.2rem;
+  left: 0;
+  width: 3rem;
+  height: 1px;
+  background: linear-gradient(90deg, #0080ff, transparent);
+}
+
+
+
+.name {
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 2rem;
+  letter-spacing: -0.02em;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(120deg, #ffffff, #e0e0e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  transform: translateZ(0);
+}
+
+.school {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 1.5rem 0 0.5rem;
+  letter-spacing: 0.05em;
+  font-family: 'Raleway', sans-serif;
+  color: rgba(255, 255, 255, 0.95);
+  position: relative;
+  display: block;
+  line-height: 1.4;
+}
+
+.course {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0.2rem 0 2.5rem;
+  color: #0080ff;
+  letter-spacing: 0.1em;
+  font-family: 'Raleway', sans-serif;
+  display: block;
+  position: relative;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.7;
+  margin: 2.8rem 0 3.2rem;
+  color: rgba(255, 255, 255, 0.98);
+  max-width: 650px;
+  position: relative;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  font-family: 'Playfair Display', serif;
+  transform: translateZ(0);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  border-left: 2px solid rgba(0, 128, 255, 0.5);
+}
+
+.tagline::before {
+  content: '"';
+  position: absolute;
+  left: 0.5rem;
+  top: 0;
+  font-size: 2.5rem;
+  color: #0080ff;
+  line-height: 1;
+  font-family: 'Playfair Display', serif;
+  opacity: 0.9;
+}
+
+.button-container {
+  display: flex;
+  gap: 2.5rem;
+  margin: 3.5rem 0;
+}
+
+.learn-more {
+  display: inline-block;
+  background: #0080ff;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 4px 12px rgba(0, 128, 255, 0.3);
+}
+
+
+
+.learn-more:hover {
+  background: #0070e0;
+  box-shadow: 0 6px 15px rgba(0, 128, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.contents {
+  display: inline-block;
+  background: transparent;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contents:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #0080ff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.social-icon {
+  color: white;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 128, 255, 0.2);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.social-icon:hover {
+  border-color: #0080ff;
+  color: #0080ff;
+  transform: translateY(-3px) scale(1.1);
+}
+
+.social-icon:hover::before {
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+  
+  .name {
+    font-size: 2.2rem;
+  }
+  
+  .tagline {
+    font-size: 1rem;
+  }
+  
+  .cta-container {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .cta-button, .secondary-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content-container {
+    padding: 0 1rem;
+  }
+  
+  .name {
+    font-size: 1.8rem;
+  }
+  
+  .subtitle, .school, .course {
+    font-size: 1rem;
+  }
+}
